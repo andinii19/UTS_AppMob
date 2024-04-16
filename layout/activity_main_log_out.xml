@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="400dp"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="20dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="20dp">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center"
+       android:orientation="vertical"
+       android:padding="10dp">
+
+       <ImageView
+           android:id="@+id/daun"
+           android:layout_width="200dp"
+           android:layout_height="170dp"
+           android:src="@drawable/daun"
+           android:layout_marginTop="-20dp"
+           android:layout_gravity="center"/>
+
+       <TextView
+           android:id="@+id/pesan"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="pesan"
+           android:gravity="center"
+           android:layout_marginTop="-10dp"
+           android:textSize="17dp"
+           android:textColor="@color/black"/>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="20dp"
+           android:gravity="center"
+           android:orientation="horizontal">
+
+           <Button
+               android:id="@+id/bttnTidak"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:backgroundTint="@color/merah"
+               android:text="Tidak"
+               android:textSize="14dp"/>
+
+           <Button
+               android:id="@+id/bttnYa"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:backgroundTint="@color/hijauUIN"
+               android:text="Ya"
+               android:layout_marginLeft="10dp"
+               android:textSize="14dp"/>
+
+
+       </LinearLayout>
+
+   </LinearLayout>
+
+</androidx.cardview.widget.CardView>

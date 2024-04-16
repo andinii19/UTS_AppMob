@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="10dp"
+    app:cardCornerRadius="20dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/fotoTA"
+            android:src="@drawable/andin"
+            android:scaleType="fitCenter"
+            android:layout_marginTop="13dp"
+            android:layout_marginStart="15dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/judulTA"/>
+
+        <TextView
+            android:id="@+id/judulTA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PERANCANGAN APLIKASI ABSENSI GURU DAN PEGAWAI\nPADA MADRASAH ALLIYAH DARUSSALAM PANGKALPINANG BERBASIS ANDROID"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginTop="5dp"
+            android:textSize="13sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/atributTA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama   :\n\nNIM      :\n\nStatus  :"
+            android:textSize="13dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginStart="15dp"
+            app:layout_constraintLeft_toRightOf="@id/fotoTA"
+            app:layout_constraintTop_toBottomOf="@id/judulTA"
+            />
+
+        <TextView
+            android:id="@+id/namaTA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Restu Kharrisa Andini"
+            android:textSize="13sp"
+            android:layout_marginTop="13dp"
+            app:layout_constraintTop_toBottomOf="@id/judulTA"
+            app:layout_constraintStart_toEndOf="@+id/atributTA"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nimTA"
+            android:text="12250124591"
+            android:textSize="13sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            app:layout_constraintTop_toBottomOf="@id/namaTA"
+            app:layout_constraintStart_toEndOf="@+id/atributTA" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/statusTA"
+            android:text="Belum dinilai"
+            android:textStyle="italic"
+            android:textSize="13sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            app:layout_constraintTop_toBottomOf="@id/nimTA"
+            app:layout_constraintStart_toEndOf="@+id/atributTA"/>
+
+        <Button
+            android:id="@+id/detailTA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Detail"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/hijauUIN"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

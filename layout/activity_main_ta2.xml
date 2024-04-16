@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    tools:context=".MainActivityTA2">
+
+    <View
+        android:id="@+id/latar11"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/latar1"
+        android:layout_marginTop="45dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/nktpa2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Input Nilai Seminar TA"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="80dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginTop="150dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/latarabu"
+        tools:context="recyelerview.mainRecyclerview">
+
+        <TextView
+            android:id="@+id/judulTA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PERANCANGAN APLIKASI ABSENSI GURU DAN PEGAWAI\nPADA MADRASAH ALLIYAH DARUSSALAM PANGKALPINANG BERBASIS ANDROID"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:paddingTop="10dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:textSize="13sp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/ta2foto"
+            android:src="@drawable/andin"
+            android:scaleType="fitCenter"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/judulTA"/>
+
+        <TextView
+            android:id="@+id/ta2atribut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama  :\n\nNIM     :"
+            android:textSize="13dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginStart="15dp"
+            app:layout_constraintLeft_toRightOf="@id/ta2foto"
+            app:layout_constraintTop_toBottomOf="@id/judulTA"
+            />
+
+        <TextView
+            android:id="@+id/ta2nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Restu Kharrisa Andini"
+            android:textSize="13sp"
+            android:layout_marginTop="13dp"
+            app:layout_constraintStart_toEndOf="@+id/ta2atribut"
+            app:layout_constraintTop_toBottomOf="@id/judulTA" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ta2nim"
+            android:text="12250124591"
+            android:textSize="13sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            app:layout_constraintStart_toEndOf="@+id/ta2atribut"
+            app:layout_constraintTop_toBottomOf="@id/ta2nama"
+            />
+
+        <Button
+            android:id="@+id/simpanTA"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="simpan"
+            android:backgroundTint="@color/hijauUIN"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="4dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ta2nim"/>
+
+        <Button
+            android:id="@+id/kembaliTA"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="kembali"
+            android:backgroundTint="@color/merah"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            app:layout_constraintRight_toLeftOf="@+id/simpanTA"
+           app:layout_constraintTop_toBottomOf="@id/ta2nim"/>
+
+<!--        <androidx.recyclerview.widget.RecyclerView-->
+<!--            android:id="@+id/recylerView"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="410dp"-->
+<!--            android:layout_marginTop="180dp"-->
+<!--            app:layout_constraintLeft_toLeftOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent">-->
+
+<!--        </androidx.recyclerview.widget.RecyclerView>-->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="190dp"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/teks1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:text="Sikap (Attitude) presentasi"/>
+
+                <TextView
+                    android:id="@+id/teks2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:text="Kemampuan Presentasi"
+                    android:paddingTop="15dp"/>
+
+                <TextView
+                    android:id="@+id/teks3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:paddingTop="15dp"
+                    android:text="Penguasaan terhadap materi"/>
+
+                <TextView
+                    android:id="@+id/teks4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:paddingTop="15dp"
+                    android:text="Urgensi terhadap masalah penelitian"/>
+
+                <TextView
+                    android:id="@+id/teks5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:paddingTop="15dp"
+                    android:text="Relevansi Referensi Dengan Judul Penelitian"/>
+
+                <TextView
+                    android:id="@+id/teks6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:paddingTop="15dp"
+                    android:text="Kesesuaian Metodologi Penelitian\nDengan pembahasan"/>
+
+                <TextView
+                    android:id="@+id/teks7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:paddingTop="15dp"
+                    android:text="Teknik Pengumpulan Data Sesuai\nStandar Laporan TA"/>
+
+                <TextView
+                    android:id="@+id/teks8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:paddingTop="15dp"
+                    android:text="Tahapan Analisa Sesuai Standar Laporan TA"/>
+
+                <TextView
+                    android:id="@+id/teks9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:paddingTop="15dp"
+                    android:text="Tahapan Perancangan Sesuai Standar\nLaporan TA"/>
+
+                <TextView
+                    android:id="@+id/teks10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:paddingTop="15dp"
+                    android:text="Produk Penelitian Sesuai Standar\nLaporan TA"/>
+
+                <TextView
+                    android:id="@+id/teks11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:paddingTop="15dp"
+                    android:text="Tahapan Pengujian Sesuai Standar\nLaporan TA"/>
+
+                <TextView
+                    android:id="@+id/teks12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:paddingTop="15dp"
+                    android:text="Hubungan Permasalahan Dengan\nHasil Penelitian"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/totalnilai"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TOTAL NILAI : "
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/isitotalnilai"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/hijauUIN"
+                        android:textAlignment="center"
+                        android:background="@drawable/latarabu"
+                        android:inputType="none"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="end"
+                android:layout_marginLeft="20dp">
+
+                <EditText
+                    android:id="@+id/nilai1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="-5dp"
+                    android:hint="isi nilai"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:inputType="text"
+                    android:maxLength="3"
+                    android:maxLines="1"
+                    android:background="@drawable/bttn2"
+                    android:textAlignment="center"
+                    />
+
+                <EditText
+                    android:id="@+id/nilai2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="22dp"
+                    android:hint="isi nilai"
+                    android:inputType="text"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:maxLength="3"
+                    android:maxLines="1"
+                    android:background="@drawable/bttn2"
+                    android:textAlignment="center"
+                    />
+
+                <EditText
+                    android:id="@+id/nilai3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="17dp"
+                    android:hint="isi nilai"
+                    android:inputType="text"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:maxLength="3"
+                    android:maxLines="1"
+                    android:background="@drawable/bttn2"
+                    android:textAlignment="center"
+                    />
+
+                <EditText
+                    android:id="@+id/nilai4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="17dp"
+                    android:hint="isi nilai"
+                    android:inputType="text"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:maxLength="3"
+                    android:maxLines="1"
+                    android:background="@drawable/bttn2"
+                    android:textAlignment="center"
+                    />
+                <EditText
+                android:id="@+id/nilai5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                    android:inputType="text"
+                android:layout_marginTop="17dp"
+                android:hint="isi nilai"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:maxLength="3"
+                android:maxLines="1"
+                android:background="@drawable/bttn2"
+                android:textAlignment="center"
+                />
+                <EditText
+                    android:id="@+id/nilai6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="17dp"
+                    android:hint="isi nilai"
+                    android:textSize="14dp"
+                    android:inputType="text"
+                    android:textStyle="bold"
+                    android:maxLength="3"
+                    android:maxLines="1"
+                    android:background="@drawable/bttn2"
+                    android:textAlignment="center"
+                    />
+
+                <EditText
+                    android:id="@+id/nilai7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="35dp"
+                    android:hint="isi nilai"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:maxLength="3"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:background="@drawable/bttn2"
+                    android:textAlignment="center"
+                    />
+
+                <EditText
+                    android:id="@+id/nilai8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="35dp"
+                    android:hint="isi nilai"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:maxLength="3"
+                    android:maxLines="1"
+                    android:inputType="text"
+                    android:background="@drawable/bttn2"
+                    android:textAlignment="center"
+                    />
+
+                <EditText
+                    android:id="@+id/nilai9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="17dp"
+                    android:hint="isi nilai"
+                    android:textSize="14dp"
+                    android:inputType="text"
+                    android:textStyle="bold"
+                    android:maxLength="3"
+                    android:maxLines="1"
+                    android:background="@drawable/bttn2"
+                    android:textAlignment="center"
+                    />
+                <EditText
+                    android:id="@+id/nilai10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="35dp"
+                    android:hint="isi nilai"
+                    android:textSize="14dp"
+                    android:inputType="text"
+                    android:textStyle="bold"
+                    android:maxLength="3"
+                    android:maxLines="1"
+                    android:background="@drawable/bttn2"
+                    android:textAlignment="center"
+                    />
+                <EditText
+                    android:id="@+id/nilai11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="35dp"
+                    android:hint="isi nilai"
+                    android:inputType="text"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:maxLength="3"
+                    android:maxLines="1"
+                    android:background="@drawable/bttn2"
+                    android:textAlignment="center"
+                    />
+                <EditText
+                    android:id="@+id/nilai12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="35dp"
+                    android:hint="isi nilai"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:maxLength="3"
+                    android:maxLines="1"
+                    android:inputType="text"
+                    android:background="@drawable/bttn2"
+                    android:textAlignment="center"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

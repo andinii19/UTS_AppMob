@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    tools:context=".MainActivityHOME">
+
+    <View
+        android:id="@+id/latar11"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/latar1"
+        android:layout_marginTop="45dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <ImageView
+        android:id="@+id/logo2"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/logoshdw"
+        android:layout_marginTop="65dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/nktpa2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NKTPA"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/logo2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aplikasi ini ditujukan untuk penginputan nilai Seminar Kerja Praktik (KP) dan Seminar Tugas Akhir (TA) di lingkungan Universitas Islam Negeri Sultan Syarif Kasim Riau, khususnya Jurusan Teknik Informatika."
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@+id/nktpa2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <View
+        android:id="@+id/latarabu1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/latarabu"
+        app:layout_constraintTop_toBottomOf="@+id/desc"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kolom Penilaian Saya"
+        android:textStyle="bold"
+        android:layout_marginBottom="100dp"
+        android:textSize="17dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <Button
+        android:id="@+id/bttnKP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Input Nilai Seminar KP"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <Button
+        android:id="@+id/bttnTA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Input Nilai Seminar TA"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="horizontal"
+        android:background="@drawable/nav"
+        >
+
+        <ImageButton
+            android:id="@+id/logohome"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="48dp"
+            android:backgroundTint="@color/white"
+            android:layout_marginTop="5dp"
+            android:contentDescription="tekan jika ingin ke Home"
+            android:scaleType="fitCenter"
+            android:src="@drawable/home" />
+
+        <ImageButton
+            android:id="@+id/logotas"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/tas"
+            android:layout_marginLeft="40dp"
+            android:backgroundTint="@color/white"
+            android:layout_marginTop="5dp"
+            android:contentDescription="tekan jika ingin ke Input nilai seminar KP"
+            />
+
+        <ImageButton
+            android:id="@+id/logotoga"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/toga"
+            android:layout_marginLeft="40dp"
+            android:backgroundTint="@color/white"
+            android:layout_marginTop="2dp"
+            android:contentDescription="tekan jika ingin ke Input nilai seminar TA"
+            />
+
+        <ImageButton
+            android:id="@+id/logokeluar"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/keluar"
+            android:backgroundTint="@color/white"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="40dp"
+            android:contentDescription="tekan jika ingin Keluar"
+
+            />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

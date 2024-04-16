@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="400dp"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="20dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="20dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start">
+
+        <ImageButton
+            android:id="@+id/kembali"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="fitCenter"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:src="@drawable/vektorpanah"
+            android:contentDescription="tekan jika"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+       <ImageView
+           android:layout_width="150dp"
+           android:layout_height="70dp"
+           android:src="@drawable/vektormhs"
+           android:layout_marginTop="20dp"/>
+        
+        <TextView
+            android:id="@+id/teks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pilih Kategori Mahasiswa/i"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:textSize="16dp"
+            android:textColor="@color/black"/>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+            
+            <Button
+                android:id="@+id/diuiji"
+                android:layout_width="222dp"
+                android:layout_height="40dp"
+                android:textSize="13dp"
+                android:text="Mahasiswa/i Yang Diuji"
+                android:backgroundTint="@color/hijauUIN"/>
+
+            <Button
+                android:id="@+id/dibimbing"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:textSize="13dp"
+                android:text="Mahasiswa/i Yang Dibimbing"
+                android:backgroundTint="@color/hijauUIN"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
